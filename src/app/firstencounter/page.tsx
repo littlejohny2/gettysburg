@@ -4,7 +4,7 @@ import Header from '../components/header'
 
 export default function Home() {
 	return (
-		<main>
+		<main className='bg-white text-black'>
 			<title>Gettysburg  | Day 1</title>
 			<Header/>
 			<div className="flex justify-center">

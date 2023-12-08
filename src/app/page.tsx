@@ -5,7 +5,7 @@ import Header from './components/header'
 
 export default function Home() {
 	return (
-		<main>
+		<main className='bg-white text-black'>
 			<title>Gettysburg  | Background</title>
 			<Header/>
 			<div className="bg-[url('../../public/battle_art.png')] h-[1050px] w-full pt-12 bg-cover bg-center">
