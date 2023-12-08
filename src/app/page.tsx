@@ -73,9 +73,9 @@ export default function Home() {
 
 					<div className="h-auto w-full float-left">
 						<div className="h-auto w-3/5 p-4 my-4 mx-auto shadow-md rounded-lg bg-amber-50">
-							<Image
-							className="w-auto mx-auto"
-							src={googleearth}
+							<img
+							className="h-auto w-auto mx-auto object-cover object-center"
+							src="/corpspositionjune30.png"
 							alt="Corps positions June 30th"
 							/>
 							<p className="w-full my-2 text-center">Convergence</p>
