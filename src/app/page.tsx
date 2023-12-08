@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from 'next/image'
-import art from '../../public/battle_art.png'
 import googleearth from '../../public/corpspositionjune30.png'
 import Header from './components/header'
 
