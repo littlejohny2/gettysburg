@@ -1,113 +1,91 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from 'next/image'
+import art from '../../public/battle_art.png'
+import googleearth from '../../public/corpspositionjune30.png'
+import Header from './components/header'
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+	return (
+		<main>
+			<Header/>
+			<div className="bg-[url('../../public/battle_art.png')] h-[1050px] w-full pt-12 bg-cover bg-center">
+			</div>
+			<div className="flex justify-center">
+				<div className="h-auto w-5/6 p-8 shadow-md rounded-lg bg-neutral-50">
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+					<div className="h-auto w-full mb-8 text-center text-6xl">
+						The Days Before Gettysburg
+					</div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+					<div className="h-auto w-5/6 float-left p-4 my-4 shadow-md rounded-lg bg-amber-50">
+						<div className="h-auto w-auto float-right p-2 my-4 ml-2 shadow-md rounded-lg bg-amber-50">
+							<img
+							className="h-72 w-96 object-cover object-center"
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Battle_of_Chancellorsville.png/449px-Battle_of_Chancellorsville.png"
+							alt="Battle of Chancellorsville"
+							/>
+							<p className="my-1 text-center">Battle of Chancellorsville</p>
+						</div>
+						<p className="w-full mb-2 text-center">Vicksburg and Chancellorsville</p>
+						<p className="my-2">The Confederacy was losing ground on all fronts. Vicksburg was its final line of defense upon the Mississippi, the great waterway serving as a lifeline for transporting large amounts of troops quickly. Soon it would fall, leaving the deep South vulnerable. General Bragg's repeated defeats in Tennessee left them losing that front as well. Only in the Eastern Theater had Lee been able to keep the Union at bay, even venturing into Maryland. Most recently, in early May of 1863, Lee won a stunning victory against a force that outnumbered his own. Additionally, his Army of Northern Virginia was low on supplies.</p>
+						<p className="my-2">All this weighed on General Robert E. Lee's mind, as he planned a bold offensive into Pennsylvania. The goal was simple: to demoralize the North. Lee relied on reports from anti-war newspapers that the North was growing weary. Lee began the advance northward June 3.</p>
+					</div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+					<div className="h-auto w-5/6 float-right p-4 my-4 shadow-md rounded-lg bg-amber-50">
+						<div className="h-auto w-auto float-left p-2 my-4 mr-2 shadow-md rounded-lg bg-amber-50">
+							<img
+							className="h-96 w-60 object-cover object-center"
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Gettysburg_Campaign.png/457px-Gettysburg_Campaign.png"
+							alt="Gettysburg Campaign"
+							/>
+							<p className="my-1 text-center">Gettysburg Campaign</p>
+						</div>
+						<p className="w-full mb-2 text-center">Lee moves North!</p>
+						<p className="my-2">Composed of three corps, after the death of General "Stonewall" Jackson in Chancellorsville, the Confederate army began to slip out of Fredericksburg. Ewell's corps moved first, with AP Hill's and Longstreet's following. They moved into the Valley of Virginia to keep their movements more secretive. Hooker sent a cavalry force to scout across the Rappahannock river. They met Jeb Stuart's cavalry at Brandy Station, leading to the largest all cavalry battle of the war. Though the Union cavalry were driven back across the river, it alerted the Union to Lee's movement and suprised Stuart. Hooker quickly moved to position the Army of the Potomac between Lee and Washington D.C., reducing their baggage train for speed. Ewell routed a Federal force at Winchester, June 14. Lee's army had cross the Potomac river by June 15. From there, they headed north into the Cumberland Valley.</p>
+						<p className="w-full mb-2 text-center">Stuart lost!</p>
+						<p className="my-2">Stuart's cavalry were meant to positiom themselves east of the Blue Ridge Mountains and provide information to Lee about the movements and progress of the Union army. Once arriving in Pennsylvania, they would reunite oncemore in York. Stuart positioned himself too far east however, and found his cavalry unable to relay information as the Union army lay between them and Lee. Due to increased speed, the Union army repeatedly came between Stuart and Lee. Instead, Stuart focused on raiding supply trains, leaving Lee with insufficient intelligence.</p>
+					</div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+					<div className="h-auto w-1/2 float-left p-4 my-4 shadow-md rounded-lg bg-amber-50">
+						<div className="h-auto w-auto float-left p-2 my-4 mr-2 shadow-md rounded-lg bg-amber-50">
+							<img
+							className="h-72 w-40 object-cover object-center"
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Joseph_Hooker_-_Brady-Handy--restored.jpg/269px-Joseph_Hooker_-_Brady-Handy--restored.jpg"
+							alt="Joseph Hooker"
+							/>
+							<p className="my-1 text-center">Joseph Hooker</p>
+						</div>
+						<p className="w-full mb-2 text-center">Hooker fired!</p>
+						<p className="my-2">Hooker had been promoted to General of the Army of the Potomac since the defeat at the Battle of Fredericksburg under Burnside. His aggressive tactics, however, had been spectacularly defeated at Chancellorsville. The goodwill toward him in Washington began waning, as once he learned Lee moved northward he wished to take Richmond. The plan was vetoed by Lincoln, who continued to lose faith in him. Due to decisions made at Chancellorsville, the officers serving under him had already lost all confidence in him. They wrote to Lincoln, expressing their issues. The final straw was an argument over the garrison at Harper's Ferry. Hooker wanted command over the garrison in Harper's Ferry, Maryland offering to resign if he was denied. To his surprise, Lincoln was more than happy to accept his resignation.</p>
+					</div>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+					<div className="h-auto w-2/5 float-right p-4 my-4 shadow-md rounded-lg bg-amber-50">
+						<div className="h-auto w-auto float-right p-2 my-4 ml-2 shadow-md rounded-lg bg-amber-50">
+							<img
+							className="h-72 w-40 object-cover object-center"
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/George_G._Meade_Standing.jpg/310px-George_G._Meade_Standing.jpg"
+							alt="George Meade"
+							/>
+							<p className="my-1 text-center">George Meade</p>
+						</div>
+						<p className="w-full mb-2 text-center">Reynolds or Meade?</p>
+						<p className="my-2">Reynolds, the commander of the first corps, had a reputation as one of the best commanders of the Army of the Potomac. He was the natural first choice for Lincoln as replacement. However, Reynolds wanted assurances that there would be no political interference from Lincoln, something he could not promise. Reynolds did not accept the offer. Meade was also a corps commander, known for his quiet and humble demeanor. He was recommended by several of his colleagues, and on June 28th a messenger arrived from Washington asking him to take command. Despite his own reservations, he accepted.</p>
+					</div>
+
+					<div className="h-auto w-full float-left">
+						<div className="h-auto w-3/5 p-4 my-4 mx-auto shadow-md rounded-lg bg-amber-50">
+							<Image
+							className="w-auto mx-auto"
+							src={googleearth}
+							alt="Corps positions June 30th"
+							/>
+							<p className="w-full my-2 text-center">Convergence</p>
+							<p className="my-2">Lee was essentially blind to the movement of the Union army without Stuart. He continued moving east, threatening the Pennsylvanian capital of Harrisburg. However, a spy hired by Longstreet informed of the Union army arriving just southward much earlier than they had anticipated. Realizing his rear was exposed, Lee decided to concentrate his forces in Cashtown, halfway between Chambersburg and Gettysburg. He ordered his commanders to not bring on a major engagement before they were reorganized. Meanwhile, Meade saw <a href='/terrain' className="text-blue-500 italic hover:underline">Gettysburg as a vital crossroads</a> to secure and ordered Reynolds and his first corps to occupy. <a href='/bufordprepares' className="text-blue-500 italic hover:underline">Buford's cavalry arrived</a> June 30th, to screen ahead for Reynolds.</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</main>
+	)
 }
