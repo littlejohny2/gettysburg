@@ -72,11 +72,6 @@ export default function Home() {
 
 					<div className="h-auto w-full float-left">
 						<div className="h-auto w-3/5 p-4 my-4 mx-auto shadow-md rounded-lg bg-amber-50">
-							<img
-							className="h-auto w-auto mx-auto object-cover object-center"
-							src="/corpspositionjune30.png"
-							alt="Corps positions June 30th"
-							/>
 							<p className="w-full my-2 text-center">Convergence</p>
 							<p className="my-2">Lee was essentially blind to the movement of the Union army without Stuart. He continued moving east, threatening the Pennsylvanian capital of Harrisburg. However, a spy hired by Longstreet informed of the Union army arriving just southward much earlier than they had anticipated. Realizing his rear was exposed, Lee decided to concentrate his forces in Cashtown, halfway between Chambersburg and Gettysburg. He ordered his commanders to not bring on a major engagement before they were reorganized. Meanwhile, Meade saw <a href='/terrain' className="text-blue-500 italic hover:underline">Gettysburg as a vital crossroads</a> to secure and ordered Reynolds and his first corps to occupy. <a href='/bufordprepares' className="text-blue-500 italic hover:underline">Buford's cavalry arrived</a> June 30th, to screen ahead for Reynolds.</p>
 						</div>
