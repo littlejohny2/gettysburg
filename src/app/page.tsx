@@ -1,10 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
+import Head from 'next/head'
 import Header from './components/header'
 
 export default function Home() {
 	return (
 		<main>
+			<title>Gettysburg  | Background</title>
 			<Header/>
 			<div className="bg-[url('../../public/battle_art.png')] h-[1050px] w-full pt-12 bg-cover bg-center">
 			</div>

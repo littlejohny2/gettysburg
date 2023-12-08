@@ -4,6 +4,7 @@ import Header from '../components/header'
 export default function Home() {
 	return (
 		<main>
+			<title>Gettysburg  | Day 2</title>
 			<Header/>
 			<div className="flex justify-center">
 				<div className="h-auto w-5/6 p-8 mt-16 shadow-md rounded-lg bg-neutral-50">

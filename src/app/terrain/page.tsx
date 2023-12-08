@@ -7,6 +7,7 @@ import RRcut from '../../../public/RRcut.png'
 export default function Home() {
 	return (
 		<main>
+			<title>Gettysburg  | Background</title>
 			<Header/>
 			<div className="flex justify-center">
 				<div className="h-auto w-5/6 p-8 mt-16 shadow-md rounded-lg bg-neutral-50">
